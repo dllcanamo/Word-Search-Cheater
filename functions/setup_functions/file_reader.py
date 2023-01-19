@@ -1,4 +1,4 @@
-_FILENAME = 'text_files/sample.txt'
+_FILENAME = 'text_files/dummy.txt'
 
 def get_title():
     with open(_FILENAME, "r") as lst:
