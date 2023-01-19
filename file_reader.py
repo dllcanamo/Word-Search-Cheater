@@ -1,8 +1,7 @@
-_FILENAME = 'dummy.txt'
+_FILENAME = 'sample.txt'
 
 def get_title():
     with open(_FILENAME, "r") as lst:
-        print(lst.readlines()[0])
         return lst.readlines()[0]
 
 def get_puzzle_or_count(value):
