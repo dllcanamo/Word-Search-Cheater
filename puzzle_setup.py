@@ -14,6 +14,9 @@ for r_index, row in enumerate(puzzle_arr):
 print(f'THIS IS YOUR {title}')
 for line in puzzle_container_list:
     print(f"{'   '.join([item.value for item in line])}\n")
+print(f'YOUR WORDS TO FIND:\n')
+for word in fr.get_words_to_find():
+    print(word)
 
 
 
