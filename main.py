@@ -8,4 +8,4 @@ if __name__ == '__main__':
     print('\t2 - FIND SPECIFIC WORD IN PUZZLE')
     print('\t3 - EXIT THE PROGRAM')
     choice = input('Input your choice here:\n')
-    search_f.search_single('TRICERATOPS')
+    search_f.search_single('VR')

@@ -15,3 +15,9 @@ class container:
         #     return None
         # else:
         return (new_x, new_y)
+
+    def get_lower_right_coordinates(self):
+        new_x = self.position[0] + 1
+        new_y = self.position[1] + 1
+        return (new_x, new_y)
+    

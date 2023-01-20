@@ -1,1 +1,3 @@
 file_reader line 37 - change your while loop code and add code on else
+puzzle_search line 30 - edit what type of exception should be raised
+    case _: - might want to change the exception
