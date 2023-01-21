@@ -1,4 +1,4 @@
-_FILENAME = 'text_files/dummy.txt'
+_FILENAME = 'text_files/sample.txt'
 
 def get_title():
     with open(_FILENAME, "r") as lst:
@@ -41,13 +41,6 @@ def get_words_to_find():
     count = get_puzzle_or_count('count')
     with open(_FILENAME, "r") as lst:
         line_arr = lst.readlines()
-        # while True:
-        #     w_arr = line_arr[count].strip().split(' ')
-        #     if w_arr[0] == '':
-        #         break
-        #     else:
-        #         final_words_arr.extend(w_arr)
-        #         count += 1
         for index in range(count, len(line_arr)):
             w_arr = line_arr[index].strip().split(' ')
             if w_arr[0] != '':
