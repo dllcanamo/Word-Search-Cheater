@@ -77,7 +77,6 @@ def manipulate(array):
     orientations.update({'diagonal_f_half_inverted' : diagonal_f_half_inverted})
     orientations.update({'diagonal_s_half' : diagonal_s_half})
     orientations.update({'diagonal_s_half_inverted' : diagonal_s_half_inverted})
-    # return orientations
 
     # first half of diagonal going left to right
     for i, item in enumerate(array[0]):

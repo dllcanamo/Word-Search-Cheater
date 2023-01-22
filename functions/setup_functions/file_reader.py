@@ -28,12 +28,14 @@ def get_puzzle_or_count(value):
                     break
             else:
                 break
+        if not final_puzzle_arr:
+            raise Exception('you do not have a puzzle in your file')
         if value == 'puzzle':
             return final_puzzle_arr
         elif value == 'count':
             return count
         else:
-            pass #DONT FORGET TO EDIT THIS LATER
+            raise Exception('key passed is non existent')
 
 def get_words_to_find():
     final_words_arr = []
@@ -45,6 +47,8 @@ def get_words_to_find():
             w_arr = line_arr[index].strip().split(' ')
             if w_arr[0] != '':
                 final_words_arr.extend(w_arr)
+        if not final_words_arr:
+            raise Exception('you do not have a list of words to find')
         return final_words_arr
 
 
