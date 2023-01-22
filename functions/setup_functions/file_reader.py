@@ -50,16 +50,3 @@ def get_words_to_find():
         if not final_words_arr:
             raise Exception('you do not have a list of words to find')
         return final_words_arr
-
-
-    
-
-            
-
-    
-
-
-# sort_puzzle()
-# get_title()
-# get_puzzle_or_count('puzzle')
-# get_words_to_find()

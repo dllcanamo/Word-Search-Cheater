@@ -22,7 +22,7 @@ def setup(action):
     elif action == 'use':
         return [title, puzzle_container_list, words]
     else:
-        raise Exception('keyword is not recognizable')
+        raise Exception('key passed is non existent')
 
 
 
