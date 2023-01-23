@@ -20,7 +20,6 @@ def get_puzzle_or_count(value):
         line_arr = lst.readlines()
         col_len = len(line_arr[1].strip().split(' '))
         count = 1
-        # CAN STILL REFACTOR CODE FOR THE WHILE LOOP, PRONE TO INFINITE LOOPS
         while True:
             # loops to check if the char array will be the same as first line
             char_arr = line_arr[count].strip().split(' ')

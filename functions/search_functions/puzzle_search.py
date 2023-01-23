@@ -23,13 +23,11 @@ def search_single(keyword, for_copy=None):
         manipulated_obj = om.manipulate(conts)
         for key in manipulated_obj:
             for i in manipulated_obj[key]:
-                # print(f'{key}, {i}, {manipulated_obj[key][i]}')
                 match = re.search(keyword, manipulated_obj[key][i])
                 if match:
                     key_to_pass = key
                     index_to_pass = i
                     span_to_pass = match.span()
-                    # print(f'Found it!, it is at {key}, {i}, {match.span()}')
                     #for repeating words
                     match_list.append([keyword, key_to_pass, index_to_pass, span_to_pass])
         if key_to_pass and index_to_pass is not None and span_to_pass:
@@ -113,9 +111,7 @@ def process_answer(match_list, for_copy):
                 curr_row = span[0]
                 curr_col = index - span[0]
                 final_index = 0
-                # print(curr_row, curr_col)
                 for i in range(span[1] - span[0]):
-                    # print(curr_row + i,curr_col - i)
                     copy_arr[curr_row + i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
@@ -136,7 +132,6 @@ def process_answer(match_list, for_copy):
                 for i in range(span[1] - span[0]):
                     copy_arr[curr_row - i][curr_col + i].value = '_'
                     final_index = i
-                # print(final_index)
                 if for_copy:
                     f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col + final_index + 1}\n')
                 else:
@@ -152,9 +147,7 @@ def process_answer(match_list, for_copy):
                 curr_row = index + span[0]
                 curr_col = len(copy_arr[0]) - span[0] - 1
                 final_index = 0
-                # print(curr_row,curr_col)
                 for i in range(span[1] - span[0]):
-                    # print(curr_row + i, curr_col - i)
                     copy_arr[curr_row + i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
@@ -172,9 +165,7 @@ def process_answer(match_list, for_copy):
                 curr_row = len(copy_arr) - span[0] - 1
                 curr_col = len(copy_arr[0]) - (len(copy_arr) - span[0]) + index 
                 final_index = 0
-                # print(curr_row,curr_col)
                 for i in range(span[1] - span[0]):
-                    # print(curr_row + i, curr_col - i)
                     copy_arr[curr_row - i][curr_col + i].value = '_'
                     final_index = i
                 if for_copy:
@@ -211,7 +202,6 @@ def process_answer(match_list, for_copy):
                 curr_col =  len(copy_arr[0]) - span[0] - 1
                 final_index = 0
                 for i in range(span[1] - span[0]):
-                    # print(curr_row - i, curr_col - i)
                     copy_arr[curr_row - i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
@@ -230,7 +220,6 @@ def process_answer(match_list, for_copy):
                 curr_col = span[0]
                 final_index = 0
                 for i in range(span[1] - span[0]):
-                    # print(curr_row - i, curr_col - i)
                     copy_arr[curr_row + i][curr_col + i].value = '_'
                     final_index = i
                 if for_copy:
@@ -249,7 +238,6 @@ def process_answer(match_list, for_copy):
                 curr_col = len(copy_arr) - index - span[0] - 1
                 final_index = 0
                 for i in range(span[1] - span[0]):
-                    # print(curr_row - i, curr_col - i)
                     copy_arr[curr_row - i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:

@@ -15,7 +15,6 @@ def manipulate(array):
     horizontal = {}
     horizontal_inverted = {}
     for index, row in enumerate(array):
-        # print(f"{([item.value for item in row])}")
         horizontal.update({index : ''.join([item.value for item in row])})
         horizontal_inverted.update({index : (''.join([item.value for item in row]))[::-1]})
     orientations.update({'horizontal' : horizontal})
@@ -51,7 +50,6 @@ def manipulate(array):
         myObj = item
         while not exceeds_puzzle:
             lower_left = myObj.get_lower_left_coordinates()
-            # print(myObj.value,myObj.position, lower_left)
             diagonal_str += myObj.value
             if lower_left[0] >= rows or lower_left[1] < 0:
                 exceeds_puzzle = True
@@ -68,17 +66,12 @@ def manipulate(array):
         while not exceeds_puzzle:
             lower_left = myObj.get_lower_left_coordinates()
             diagonal_str += myObj.value
-            # print(myObj.value,myObj.position, lower_left)
             if lower_left[0] >= rows or lower_left[1] < 0:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_left[0]][lower_left[1]]
         diagonal_s_half.update({i : diagonal_str})
         diagonal_s_half_inverted.update({i : diagonal_str[::-1]})
-    # print(diagonal_f_half)
-    # print(diagonal_s_half)
-    # print(diagonal_f_half_inverted)
-    # print(diagonal_s_half_inverted)
     orientations.update({'diagonal_f_half' : diagonal_f_half})
     orientations.update({'diagonal_f_half_inverted' : diagonal_f_half_inverted})
     orientations.update({'diagonal_s_half' : diagonal_s_half})
@@ -91,7 +84,6 @@ def manipulate(array):
         myObj = item
         while not exceeds_puzzle:
             lower_right = myObj.get_lower_right_coordinates()
-            # print(myObj.value, myObj.position, lower_right)
             diagonal_str += myObj.value
             if lower_right[0] >= rows or lower_right[1] >= cols:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
@@ -108,17 +100,12 @@ def manipulate(array):
         while not exceeds_puzzle:
             lower_right = myObj.get_lower_right_coordinates()
             diagonal_str += myObj.value
-            # print(myObj.value,myObj.position, lower_left)
             if lower_right[0] >= rows or lower_right[1] < 0:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_right[0]][lower_right[1]]
         diagonal_s_ltf_half.update({i : diagonal_str})
         diagonal_s_ltf_half_inverted.update({i : diagonal_str[::-1]})
-    # print(diagonal_f_ltf_half)
-    # print(diagonal_s_ltf_half)
-    # print(diagonal_f_ltf_half_inverted)
-    # print(diagonal_s_ltf_half_inverted)
     orientations.update({'diagonal_f_ltf_half' : diagonal_f_ltf_half})
     orientations.update({'diagonal_f_ltf_half_inverted' : diagonal_f_ltf_half_inverted})
     orientations.update({'diagonal_s_ltf_half' : diagonal_s_ltf_half})
