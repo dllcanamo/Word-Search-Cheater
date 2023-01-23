@@ -9,7 +9,13 @@ array = setup_f.setup('use')
 conts = array[1]
 
 def search_single(keyword, for_copy=None):
-    if array: #to make sure it is not empty
+    '''
+    searches for keyword using regex based on the provided group of strings in their
+    corresponding oreientations, passes its results to process_answer() with the match
+    and a filename if necessary
+    '''
+
+    if array:  #to make sure it is not empty
         match_list = []
         key_to_pass = None
         index_to_pass = None
@@ -20,22 +26,24 @@ def search_single(keyword, for_copy=None):
                 # print(f'{key}, {i}, {manipulated_obj[key][i]}')
                 match = re.search(keyword, manipulated_obj[key][i])
                 if match:
-                # if manipulated_obj[key][i] == keyword:
                     key_to_pass = key
                     index_to_pass = i
                     span_to_pass = match.span()
                     # print(f'Found it!, it is at {key}, {i}, {match.span()}')
                     #for repeating words
                     match_list.append([keyword, key_to_pass, index_to_pass, span_to_pass])
-                    # print(match.span())
         if key_to_pass and index_to_pass is not None and span_to_pass:
             process_answer(match_list, for_copy)
-            # process_answer(keyword, key_to_pass, index_to_pass, span_to_pass)
         else:
             raise Exception('you are looking for a word that is not in the list of words')
 
 def process_answer(match_list, for_copy):
-    # print(for_copy)
+    '''
+    creates prints or a copy of the created puzzle which will then cross out specific strings 
+    based on the match_list passed, prints or writes line to a file depending if there was a 
+    provided filename
+    '''
+
     with open(f'./{for_copy}', 'a') as f:
         if not match_list:
             print('Sorry, you do not have a match_list')

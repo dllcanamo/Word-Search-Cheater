@@ -1,10 +1,13 @@
 _FILENAME = 'text_files/sample.txt'
 
 def get_title():
+    ''' returns the title of the text file provided '''
     with open(_FILENAME, "r") as lst:
         return lst.readlines()[0]
 
 def get_puzzle_or_count(value):
+    ''' returns puzzle from the text file or its length depending on argument passed '''
+
     final_puzzle_arr = []
 
     with open(_FILENAME, "r") as lst:
@@ -38,6 +41,8 @@ def get_puzzle_or_count(value):
             raise Exception('key passed is non existent')
 
 def get_words_to_find():
+    ''' returns a list of the words to search for in the text file'''
+
     final_words_arr = []
 
     count = get_puzzle_or_count('count')

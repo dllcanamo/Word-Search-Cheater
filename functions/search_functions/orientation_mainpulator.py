@@ -1,4 +1,9 @@
 def manipulate(array):
+    '''
+    takes every line that can be made horizontally, vertically, and diagonally,
+    and converts them into an object with a corresponding orientation and group of strings
+    '''
+
     rows = len(array)
     cols = len(array[0])
     
@@ -46,7 +51,6 @@ def manipulate(array):
             # print(myObj.value,myObj.position, lower_left)
             diagonal_str += myObj.value
             if lower_left[0] >= rows or lower_left[1] < 0:
-                # print('thats the end for me!')
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_left[0]][lower_left[1]]
@@ -62,8 +66,7 @@ def manipulate(array):
             lower_left = myObj.get_lower_left_coordinates()
             diagonal_str += myObj.value
             # print(myObj.value,myObj.position, lower_left)
-            if lower_left[0] >= rows or lower_left[1] < 0:
-                # print('thats the end for me!')
+            if lower_left[0] >= rows or lower_left[1] < 0:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_left[0]][lower_left[1]]
@@ -87,8 +90,7 @@ def manipulate(array):
             lower_right = myObj.get_lower_right_coordinates()
             # print(myObj.value, myObj.position, lower_right)
             diagonal_str += myObj.value
-            if lower_right[0] >= rows or lower_right[1] >= cols:
-                # print('thats the end for me!')
+            if lower_right[0] >= rows or lower_right[1] >= cols:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_right[0]][lower_right[1]]
@@ -104,8 +106,7 @@ def manipulate(array):
             lower_right = myObj.get_lower_right_coordinates()
             diagonal_str += myObj.value
             # print(myObj.value,myObj.position, lower_left)
-            if lower_right[0] >= rows or lower_right[1] < 0:
-                # print('thats the end for me!')
+            if lower_right[0] >= rows or lower_right[1] < 0:  #checks to see if bound of the puzzle are exceeded
                 exceeds_puzzle = True
             else:
                 myObj = array[lower_right[0]][lower_right[1]]

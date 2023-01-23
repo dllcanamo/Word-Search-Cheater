@@ -1,0 +1,390 @@
+
+AUTUMN starts @ row 6 column 13, going up until row 12
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   _
+	C   O   I   A   O   E   N   O   R   R   U   D   _
+	O   R   L   R   C   C   W   M   K   G   M   Z   _
+	F   C   A   U   L   D   R   O   N   C   E   C   _
+	D   E   T   N   U   A   H   Q   L   A   A   P   _
+	T   R   E   A   T   S   W   H   S   F   B   J   _
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+GHOST starts @ row 1 column 5, going down diagonally to row 5 col 9
+	N   H   S   Y   _   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   _   C   E   L   R   A   L   R
+	D   W   E   C   O   T   _   U   T   A   F   U   A
+	D   P   I   T   O   D   F   _   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   _   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+SHADOWS starts @ row 7 column 9, going up diagonally to row 1 col 3
+	N   H   _   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   _   K   H   C   E   L   R   A   L   R
+	D   W   E   C   _   T   O   U   T   A   F   U   A
+	D   P   I   T   O   _   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   _   E   T   E   O   A   S
+	T   D   E   E   H   A   R   _   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   _   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+CANDY starts @ row 9 column 5, going up diagonally to row 5 col 1
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	_   R   W   B   N   T   A   E   T   E   O   A   S
+	T   _   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   _   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   _   O   E   N   O   R   R   U   D   U
+	O   R   L   R   _   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+GRAVEYARD starts @ row 9 column 10, going up until row 1
+	N   H   S   Y   G   S   J   O   A   _   S   A   Y
+	I   R   M   W   K   H   C   E   L   _   A   L   R
+	D   W   E   C   O   T   O   U   T   _   F   U   A
+	D   P   I   T   O   D   F   S   T   _   C   C   C
+	Y   R   W   B   N   T   A   E   T   _   O   A   S
+	T   D   E   E   H   A   R   H   R   _   S   R   H
+	Q   R   N   G   R   R   L   Z   S   _   T   D   A
+	C   O   I   A   O   E   N   O   R   _   U   D   U
+	O   R   L   R   C   C   W   M   K   _   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+TERROR starts @ row 4 column 9, going down diagonally to row 9 col 4
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   _   Y   C   C   C
+	Y   R   W   B   N   T   A   _   T   E   O   A   S
+	T   D   E   E   H   A   _   H   R   V   S   R   H
+	Q   R   N   G   R   _   L   Z   S   A   T   D   A
+	C   O   I   A   _   E   N   O   R   R   U   D   U
+	O   R   L   _   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+CAULDRON starts @ row 10 column 2, going to the right until column 9
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   _   _   _   _   _   _   _   _   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+HAUNTED starts @ row 11 column 7, going to the left until column 1
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	_   _   _   _   _   _   _   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+TREATS starts @ row 12 column 1, going to the right until column 6
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	_   _   _   _   _   _   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+COSTUME starts @ row 3 column 11, going up until row 10
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   _   C   C
+	Y   R   W   B   N   T   A   E   T   E   _   A   S
+	T   D   E   E   H   A   R   H   R   V   _   R   H
+	Q   R   N   G   R   R   L   Z   S   A   _   D   A
+	C   O   I   A   O   E   N   O   R   R   _   D   U
+	O   R   L   R   C   C   W   M   K   G   _   Z   T
+	F   C   A   U   L   D   R   O   N   C   _   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+JACKOLANTERN starts @ row 12 column 12, going up diagonally to row 1 col 1
+	_   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   _   M   W   K   H   C   E   L   R   A   L   R
+	D   W   _   C   O   T   O   U   T   A   F   U   A
+	D   P   I   _   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   _   T   A   E   T   E   O   A   S
+	T   D   E   E   H   _   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   _   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   _   R   R   U   D   U
+	O   R   L   R   C   C   W   M   _   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   _   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   _   P   M
+	T   R   E   A   T   S   W   H   S   F   B   _   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+TRICKS starts @ row 6 column 1, going up diagonally to row 1 col 6
+	N   H   S   Y   G   _   J   O   A   D   S   A   Y
+	I   R   M   W   _   H   C   E   L   R   A   L   R
+	D   W   E   _   O   T   O   U   T   A   F   U   A
+	D   P   _   T   O   D   F   S   T   Y   C   C   C
+	Y   _   W   B   N   T   A   E   T   E   O   A   S
+	_   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+DRACULA starts @ row 7 column 12, going up until row 1
+	N   H   S   Y   G   S   J   O   A   D   S   _   Y
+	I   R   M   W   K   H   C   E   L   R   A   _   R
+	D   W   E   C   O   T   O   U   T   A   F   _   A
+	D   P   I   T   O   D   F   S   T   Y   C   _   C
+	Y   R   W   B   N   T   A   E   T   E   O   _   S
+	T   D   E   E   H   A   R   H   R   V   S   _   H
+	Q   R   N   G   R   R   L   Z   S   A   T   _   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+OCTOBER starts @ row 1 column 8, going down diagonally to row 7 col 2
+	N   H   S   Y   G   S   J   _   A   D   S   A   Y
+	I   R   M   W   K   H   _   E   L   R   A   L   R
+	D   W   E   C   O   _   O   U   T   A   F   U   A
+	D   P   I   T   _   D   F   S   T   Y   C   C   C
+	Y   R   W   _   N   T   A   E   T   E   O   A   S
+	T   D   _   E   H   A   R   H   R   V   S   R   H
+	Q   _   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+WEREWOLF starts @ row 5 column 3, going down diagonally to row 12 col 10
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   _   B   N   T   A   E   T   E   O   A   S
+	T   D   E   _   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   _   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   _   N   O   R   R   U   D   U
+	O   R   L   R   C   C   _   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   _   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   _   A   A   P   M
+	T   R   E   A   T   S   W   H   S   _   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+FRIGHTFUL starts @ row 10 column 1, going up diagonally to row 2 col 9
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   _   R   A   L   R
+	D   W   E   C   O   T   O   _   T   A   F   U   A
+	D   P   I   T   O   D   _   S   T   Y   C   C   C
+	Y   R   W   B   N   _   A   E   T   E   O   A   S
+	T   D   E   E   _   A   R   H   R   V   S   R   H
+	Q   R   N   _   R   R   L   Z   S   A   T   D   A
+	C   O   _   A   O   E   N   O   R   R   U   D   U
+	O   _   L   R   C   C   W   M   K   G   M   Z   T
+	_   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+SCARY starts @ row 5 column 13, going up until row 1
+	N   H   S   Y   G   S   J   O   A   D   S   A   _
+	I   R   M   W   K   H   C   E   L   R   A   L   _
+	D   W   E   C   O   T   O   U   T   A   F   U   _
+	D   P   I   T   O   D   F   S   T   Y   C   C   _
+	Y   R   W   B   N   T   A   E   T   E   O   A   _
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+WITCH starts @ row 13 column 9, going to the left until column 5
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   _   _   _   _   _   V   L   L   L
+
+ZEAS starts @ row 9 column 12, going down diagonally to row 12 col 9
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   _   T
+	F   C   A   U   L   D   R   O   N   C   _   C   U
+	D   E   T   N   U   A   H   Q   L   _   A   P   M
+	T   R   E   A   T   S   W   H   _   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+SAEZ starts @ row 12 column 9, going up diagonally to row 9 col 12
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   D   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   _   T
+	F   C   A   U   L   D   R   O   N   C   _   C   U
+	D   E   T   N   U   A   H   Q   L   _   A   P   M
+	T   R   E   A   T   S   W   H   _   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+DNACDH starts @ row 6 column 2, going down diagonally to row 11 col 7
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   _   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   _   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   _   O   E   N   O   R   R   U   D   U
+	O   R   L   R   _   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   _   R   O   N   C   E   C   U
+	D   E   T   N   U   A   _   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+CUTESD starts @ row 2 column 7, going down diagonally to row 7 col 12
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   _   E   L   R   A   L   R
+	D   W   E   C   O   T   O   _   T   A   F   U   A
+	D   P   I   T   O   D   F   S   _   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   _   O   A   S
+	T   D   E   E   H   A   R   H   R   V   _   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   _   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+HDCAND starts @ row 11 column 7, going up diagonally to row 6 col 2
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   O   U   T   A   F   U   A
+	D   P   I   T   O   D   F   S   T   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   E   O   A   S
+	T   _   E   E   H   A   R   H   R   V   S   R   H
+	Q   R   _   G   R   R   L   Z   S   A   T   D   A
+	C   O   I   _   O   E   N   O   R   R   U   D   U
+	O   R   L   R   _   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   _   R   O   N   C   E   C   U
+	D   E   T   N   U   A   _   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+DSETUC starts @ row 7 column 12, going up diagonally to row 2 col 7
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   _   E   L   R   A   L   R
+	D   W   E   C   O   T   O   _   T   A   F   U   A
+	D   P   I   T   O   D   F   S   _   Y   C   C   C
+	Y   R   W   B   N   T   A   E   T   _   O   A   S
+	T   D   E   E   H   A   R   H   R   V   _   R   H
+	Q   R   N   G   R   R   L   Z   S   A   T   _   A
+	C   O   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+ODNENO starts @ row 3 column 7, going down diagonally to row 8 col 2
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   _   U   T   A   F   U   A
+	D   P   I   T   O   _   F   S   T   Y   C   C   C
+	Y   R   W   B   _   T   A   E   T   E   O   A   S
+	T   D   E   _   H   A   R   H   R   V   S   R   H
+	Q   R   _   G   R   R   L   Z   S   A   T   D   A
+	C   _   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L
+
+ONENDO starts @ row 8 column 2, going up diagonally to row 3 col 7
+	N   H   S   Y   G   S   J   O   A   D   S   A   Y
+	I   R   M   W   K   H   C   E   L   R   A   L   R
+	D   W   E   C   O   T   _   U   T   A   F   U   A
+	D   P   I   T   O   _   F   S   T   Y   C   C   C
+	Y   R   W   B   _   T   A   E   T   E   O   A   S
+	T   D   E   _   H   A   R   H   R   V   S   R   H
+	Q   R   _   G   R   R   L   Z   S   A   T   D   A
+	C   _   I   A   O   E   N   O   R   R   U   D   U
+	O   R   L   R   C   C   W   M   K   G   M   Z   T
+	F   C   A   U   L   D   R   O   N   C   E   C   U
+	D   E   T   N   U   A   H   Q   L   A   A   P   M
+	T   R   E   A   T   S   W   H   S   F   B   J   N
+	Y   P   A   H   H   C   T   I   W   V   L   L   L

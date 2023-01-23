@@ -2,6 +2,8 @@ import classes.container as cont
 import functions.setup_functions.file_reader as fr
 
 def setup(action):
+    ''' prints the title, puzzle, and words to find or returns them depending on argument passed '''
+
     puzzle_arr = fr.get_puzzle_or_count('puzzle')
     title = fr.get_title()
     words = fr.get_words_to_find()
