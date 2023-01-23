@@ -4,6 +4,9 @@ def manipulate(array):
     and converts them into an object with a corresponding orientation and group of strings
     '''
 
+    if not array:
+        raise Exception('there is no array being passed')
+
     rows = len(array)
     cols = len(array[0])
     
