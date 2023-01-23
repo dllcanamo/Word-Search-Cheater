@@ -1,7 +1,13 @@
+from pathlib import Path 
+
 _FILENAME = 'text_files/sample.txt'
+
+def check_file_existence():
+    return Path(_FILENAME).is_file()
 
 def get_title():
     ''' returns the title of the text file provided '''
+
     with open(_FILENAME, "r") as lst:
         return lst.readlines()[0]
 
@@ -55,3 +61,4 @@ def get_words_to_find():
         if not final_words_arr:
             raise Exception('you do not have a list of words to find')
         return final_words_arr
+

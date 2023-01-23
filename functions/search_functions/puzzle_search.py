@@ -58,9 +58,9 @@ def process_answer(match_list, for_copy):
                 for i in range(span[0], span[1]):
                     copy_arr[index][i].value = '_'
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {index+1} column {span[0]+1}, going to the right until column {span[1]}\n')
+                    f.write(f'\n{keyword} starts @ row {index + 1} column {span[0] + 1}, going to the right until column {span[1]}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {index+1} column {span[0]+1}, going to the right until column {span[1]}\n')
+                    print(f'\n{keyword} starts @ row {index + 1} column {span[0] + 1}, going to the right until column {span[1]}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -72,9 +72,9 @@ def process_answer(match_list, for_copy):
                 for i in range(span[0], span[1]):
                     copy_arr[index][-(i+1)].value = '_'
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {index+1} column {col_len - span[0]}, going to the left until column {col_len - span[1]+1}\n')
+                    f.write(f'\n{keyword} starts @ row {index + 1} column {col_len - span[0]}, going to the left until column {col_len - span[1]+1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {index+1} column {col_len - span[0]}, going to the left until column {col_len - span[1]+1}\n')
+                    print(f'\n{keyword} starts @ row {index + 1} column {col_len - span[0]}, going to the left until column {col_len - span[1]+1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -85,9 +85,9 @@ def process_answer(match_list, for_copy):
                 for i in range(span[0], span[1]):
                     copy_arr[i][index].value = '_'
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {span[0]} column {index+1}, going up until row {span[1]}\n')
+                    f.write(f'\n{keyword} starts @ row {span[0]} column {index + 1}, going up until row {span[1]}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {span[0]} column {index+1}, going up until row {span[1]}\n')
+                    print(f'\n{keyword} starts @ row {span[0]} column {index + 1}, going up until row {span[1]}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -99,9 +99,9 @@ def process_answer(match_list, for_copy):
                 for i in range(span[0], span[1]):
                     copy_arr[-(i+1)][index].value = '_'
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {col_len - span[0]} column {index+1}, going up until row {col_len - span[1] + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {col_len - span[0]} column {index + 1}, going up until row {col_len - span[1] + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {col_len - span[0]} column {index+1}, going up until row {col_len - span[1] + 1}\n')
+                    print(f'\n{keyword} starts @ row {col_len - span[0]} column {index + 1}, going up until row {col_len - span[1] + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -119,9 +119,9 @@ def process_answer(match_list, for_copy):
                     copy_arr[curr_row + i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col - final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col - final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col - final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col - final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -138,9 +138,9 @@ def process_answer(match_list, for_copy):
                     final_index = i
                 # print(final_index)
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col + final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col + final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col + final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col + final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -196,9 +196,9 @@ def process_answer(match_list, for_copy):
                     copy_arr[curr_row + i][curr_col + i].value = '_'
                     final_index = i
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -215,9 +215,9 @@ def process_answer(match_list, for_copy):
                     copy_arr[curr_row - i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -234,9 +234,9 @@ def process_answer(match_list, for_copy):
                     copy_arr[curr_row + i][curr_col + i].value = '_'
                     final_index = i
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going down diagonally to row {curr_row + final_index + 1} col {curr_col + final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
@@ -253,9 +253,9 @@ def process_answer(match_list, for_copy):
                     copy_arr[curr_row - i][curr_col - i].value = '_'
                     final_index = i
                 if for_copy:
-                    f.write(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
+                    f.write(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
                 else:
-                    print(f'\n{keyword} starts @ row {curr_row+1} column {curr_col+1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
+                    print(f'\n{keyword} starts @ row {curr_row + 1} column {curr_col + 1}, going up diagonally to row {curr_row - final_index + 1} col {curr_col - final_index + 1}\n')
                 for line in copy_arr:
                     if for_copy:
                         f.write(f"\t{'   '.join([item.value for item in line])}\n")
