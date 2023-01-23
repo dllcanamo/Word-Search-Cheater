@@ -51,6 +51,3 @@ if __name__ == '__main__':
         else:
             os.system('cls||clear')
             print('unidentified input, please try again')
-        # words_arr = fr.get_words_to_find()
-        # for word in words_arr:
-        #     search_f.search_single(word)
