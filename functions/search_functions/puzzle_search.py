@@ -1,6 +1,5 @@
 import re
 import copy
-import os
 
 import functions.search_functions.orientation_mainpulator as om
 
