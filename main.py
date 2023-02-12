@@ -14,6 +14,9 @@ def present_puzzle():
 if __name__ == '__main__':
     program_should_not_exit = True
 
+    # check if file exists
+    if not os.path.isfile(_FILENAME):
+        raise Exception('the file currently does not exist')
     # instantiate a new puzzle object set
     puzzle = pz(_FILENAME)
     # pass the puzzle object to file containing search algorithm
@@ -21,7 +24,8 @@ if __name__ == '__main__':
 
 
     while program_should_not_exit:
-        print('\nWhat do you want to do?')
+        print('\nWELCOME TO WORD SEARCH CHEATER!')
+        print('What do you want to do?')
         print('\t1 - COPY CHEAT CODES TO TEXT FILE')
         print('\t2 - FIND SPECIFIC WORD IN PUZZLE')
         print('\t3 - EXIT THE PROGRAM')
