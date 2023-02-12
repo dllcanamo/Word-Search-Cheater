@@ -10,11 +10,12 @@ class Puzzle:
             self.title = self.get_title()
             self.puzzle_portion = self.get_puzzle_portion()
             self.words = self.get_words_to_find()
+            self.puzzle_object = self.get_puzzle_object()
             
 
     def get_title(self):
         return self.line_arr[0]
-        
+
     
     # for printing purposes only
     def get_presentable_title(self):
@@ -83,5 +84,6 @@ class Puzzle:
             for col_index, line in enumerate(row):
                 row_container.append(cont.container(line, (r_index, col_index)))
             puzzle_container_list.append(row_container)
+        return puzzle_container_list
 
     

@@ -2,11 +2,23 @@ import re
 import copy
 import os
 
-import functions.setup_functions.puzzle_setup as setup_f
 import functions.search_functions.orientation_mainpulator as om
 
-array = setup_f.setup('use')
-conts = array[1]
+class PuzzleObject:
+    def __init__(self):
+        self.puzzle_object = None
+
+    def obtain_puzzle_object(self, object_passed):
+        self.puzzle_object = object_passed
+
+
+# instantiate a new puzzle object class
+puzzle = PuzzleObject()
+
+
+def setup_puzzle_object_for_search(pz):
+    puzzle.obtain_puzzle_object(pz.puzzle_object)
+
 
 def search_single(keyword, for_copy=None):
     '''
@@ -15,12 +27,12 @@ def search_single(keyword, for_copy=None):
     and a filename if necessary
     '''
 
-    if array:  #to make sure it is not empty
+    if puzzle:  #to make sure it is not empty
         match_list = []
         key_to_pass = None
         index_to_pass = None
         span_to_pass = None
-        manipulated_obj = om.manipulate(conts)
+        manipulated_obj = om.manipulate(puzzle.puzzle_object)
         for key in manipulated_obj:
             for i in manipulated_obj[key]:
                 match = re.search(keyword, manipulated_obj[key][i])
@@ -32,8 +44,10 @@ def search_single(keyword, for_copy=None):
                     match_list.append([keyword, key_to_pass, index_to_pass, span_to_pass])
         if key_to_pass and index_to_pass is not None and span_to_pass:
             process_answer(match_list, for_copy)
+            pass
         else:
             raise Exception('you are looking for a word that is not in the list of words')
+
 
 def process_answer(match_list, for_copy):
     '''
@@ -52,7 +66,7 @@ def process_answer(match_list, for_copy):
             index = match[2]
             span = match[3]
             if key == 'horizontal':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 for i in range(span[0], span[1]):
                     copy_arr[index][i].value = '_'
                 if for_copy:
@@ -65,7 +79,7 @@ def process_answer(match_list, for_copy):
                     else:
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             elif key == 'horizontal_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 col_len = len(copy_arr[0])
                 for i in range(span[0], span[1]):
                     copy_arr[index][-(i+1)].value = '_'
@@ -79,7 +93,7 @@ def process_answer(match_list, for_copy):
                     else:
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             elif key == 'vertical':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 for i in range(span[0], span[1]):
                     copy_arr[i][index].value = '_'
                 if for_copy:
@@ -92,7 +106,7 @@ def process_answer(match_list, for_copy):
                     else:
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             elif key == 'vertical_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 col_len = len(copy_arr[0])
                 for i in range(span[0], span[1]):
                     copy_arr[-(i+1)][index].value = '_'
@@ -107,7 +121,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_f_half':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = span[0]
                 curr_col = index - span[0]
                 final_index = 0
@@ -125,7 +139,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_f_half_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = index - span[0]
                 curr_col = span[0]
                 final_index = 0
@@ -143,7 +157,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_s_half':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = index + span[0]
                 curr_col = len(copy_arr[0]) - span[0] - 1
                 final_index = 0
@@ -161,7 +175,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_s_half_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = len(copy_arr) - span[0] - 1
                 curr_col = len(copy_arr[0]) - (len(copy_arr) - span[0]) + index 
                 final_index = 0
@@ -179,7 +193,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_f_ltf_half':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = span[0]
                 curr_col = index + span[0]
                 final_index = 0
@@ -197,7 +211,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_f_ltf_half_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = len(copy_arr) - index - span[0] - 1
                 curr_col =  len(copy_arr[0]) - span[0] - 1
                 final_index = 0
@@ -215,7 +229,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_s_ltf_half':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = span[0] + index
                 curr_col = span[0]
                 final_index = 0
@@ -233,7 +247,7 @@ def process_answer(match_list, for_copy):
                         print(f"\t{'   '.join([item.value for item in line])}\n")
             # WORKING PROPERLY
             elif key == 'diagonal_s_ltf_half_inverted':
-                copy_arr = copy.deepcopy(conts)
+                copy_arr = copy.deepcopy(puzzle.puzzle_object)
                 curr_row = len(copy_arr) - span[0] - 1
                 curr_col = len(copy_arr) - index - span[0] - 1
                 final_index = 0
